@@ -651,7 +651,7 @@ function initChart(){
 function connectDeriv(){
   const token = document.getElementById('apiToken').value.trim();
   if(ws){ws.close();ws=null;}
-  const appId = 36544;
+  const appId = 1089;
   ws = new WebSocket(`wss://ws.binaryws.com/websockets/v3?app_id=${appId}`);
   log('Connecting to Deriv...','info');
   ws.onopen = ()=>{
